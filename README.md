@@ -1,5 +1,5 @@
 # ACAD-Lock
-AutoCAD script for locking down a drawing in native format so it can be supplied and reviewd, but not stolen from. (Not including line tracing the whole thing (which can always be done anyway)).
+AutoCAD script for locking down a drawing in native format so it can be supplied and reviewed, but not stolen from. (Not including line tracing the whole thing (which can always be done anyway)).
 
 ## Installation
 Edit your existing acad.lsp file to include the .lsp in this package, or create yourself a new one with the below:
