@@ -7,13 +7,6 @@
 ;====================================================================;
 ;Alert Message, Error, Exit
 ;====================================================================;
-(alert
-  "\nDO NOT RUN LOCKUP ON AN ORIGINAL DRAWING!
-   \nRUN ONLY ON A COPY OF THE ORIGINAL!
-   \n
-   \nType LOCKUP to lock and UNDOLOCK to unlock."
-)
-
 (defun lockerror (msg)
   (if (/= msg "Function cancelled.")
     (princ
@@ -948,6 +941,12 @@
 ;Run Lockup Main
 ;====================================================================;
 (defun C:Lockup	(/ start answer)
+  (alert
+  "\nDO NOT RUN LOCKUP ON AN ORIGINAL DRAWING!
+  \nRUN ONLY ON A COPY OF THE ORIGINAL!
+  \n
+  \nType LOCKUP to lock and UNDOLOCK to unlock."
+  )
   (setq	fdia	(getvar "filedia")
 	cdia	(getvar "cmddia")
 	cmd	(getvar "cmdecho")
